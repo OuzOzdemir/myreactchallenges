@@ -1,3 +1,5 @@
+/* first challenge starts
+
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -38,6 +40,7 @@ function Navbar() {
     )
 }
 
+
 // Challenge: Create your own custom React component!
 // Call it "MainContent", and have it return a simple
 // h1 element that says "I'm learning React!"
@@ -58,3 +61,54 @@ ReactDOM.render(
     </div>,
     document.getElementById("root")
 )
+
+first challenge ends*/
+
+/*second challenge starts
+
+Imperative way of writing which will take many lines of code
+// ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
+
+Challenge - recreate the above line of code in vanilla JS by creating and
+appending an h1 to our div#root (without using innerHTML).
+- Create a new h1 element
+- Give it some textContent
+- Give it a class name of "header"
+- append it as a child of the div#root
+    
+const h1 = document.createElement("h1")
+h1.textContent = "This is an imperative way to program"
+h1.className = "header"
+document.getElementById("root").append(h1)
+
+Declerative and easy way
+ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+
+second challenge ends*/
+
+/*third challenge starts
+
+// const h1 = document.createElement("h1")
+// h1.textContent = "Hello world"
+// h1.className = "header"
+// console.log(h1)
+
+// JSX
+ReactDOM.render(
+    <h1 className="header">This is JSX</h1>, 
+    document.getElementById("root")
+)
+
+// JSX
+const page = (
+    <div>
+        <h1 className="header">This is JSX</h1>
+        <p>This is a paragraph</p>
+    </div>
+)
+ReactDOM.render(
+    page,
+    document.getElementById("root")
+)
+
+third challenge ends*/
