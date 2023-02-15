@@ -64,27 +64,29 @@ ReactDOM.render(
 
 first challenge ends*/
 
+
 /*second challenge starts
 
-Imperative way of writing which will take many lines of code
+//Imperative way of writing which will take many lines of code
 // ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
 
-Challenge - recreate the above line of code in vanilla JS by creating and
-appending an h1 to our div#root (without using innerHTML).
-- Create a new h1 element
-- Give it some textContent
-- Give it a class name of "header"
-- append it as a child of the div#root
+//Challenge - recreate the above line of code in vanilla JS by creating and
+//appending an h1 to our div#root (without using innerHTML).
+//- Create a new h1 element
+//- Give it some textContent
+//- Give it a class name of "header"
+//- append it as a child of the div#root
     
 const h1 = document.createElement("h1")
 h1.textContent = "This is an imperative way to program"
 h1.className = "header"
 document.getElementById("root").append(h1)
 
-Declerative and easy way
+//Declerative and easy way
 ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
 
 second challenge ends*/
+
 
 /*third challenge starts
 
@@ -112,3 +114,38 @@ ReactDOM.render(
 )
 
 third challenge ends*/
+
+
+/*fourth challenge starts
+
+// const page = (
+//     <div>
+//         <h1 className="header">This is JSX</h1>
+//         <p>This is a paragraph</p>
+//     </div>
+// )
+
+//Challenge: 
+
+//Create a navbar in JSX:
+//    - Use the semantic `nav` element as the parent wrapper
+//    - Have an h1 element with the brand name of your "website"
+//    - Insert an unordered list for the other nav elements
+//    - Inside the `ul`, have three `li`s for "Pricing",
+//      "About", and "Contact"
+
+const navbar = (
+    <nav>
+        <h1>Bob's Bistro</h1>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(navbar, document.getElementById("root"))
+
+fourth challenge ends */
+
