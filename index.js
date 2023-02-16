@@ -252,8 +252,96 @@ ReactDOM.render(page, document.getElementById("root"))
   
  */
 
+
+
+  
 /*
+quizz
+1. Why do we need to `import React from "react"` in our files?
+*React will not be rendered on the page without importing it.
+-React is what defines JSX. It won't work without importing it.
+
+2. If I were to console.log(page) in index.js, what would show up?
+*It would tell us that it is an object since it's a JSX code.
+-A JavaScript object. React elements that describe what React should
+eventually add to the real DOM for us.
+
+3. What's wrong with this code:
+```
+const page = (
+    <h1>Hello</h1>
+    <p>This is my website!</p>
+)
+```
+*It is not rendered wiht ReactDOM.render() method. Moreover, it should be nested
+in parent element such as div
+-We need our JSX to be nested under a single parent element
 
 
+4. What does it mean for something to be "declarative" instead of "imperative"?
+*Declarative means that computer will be dealing with the process instead of us
+telling computer about each step as it is in imperative way.
+-Declarative means I can tell the computer WHAT to do 
+and expect it to handle the details. Imperative means I need
+to tell it HOW to do each step.
+
+
+5. What does it mean for something to be "composable"?
+*It is about relation between components that you can create connections with.
+-We have small pieces that we can put together to make something
+larger/greater than the individual pieces.
+*/
+
+
+
+
+/*
+import React from "react"
+import ReactDOM from "react-dom"
+
+function TemporaryName() {
+    return (
+        <div>
+            <img src="./react-logo.png" width="40px" />
+            <h1>Fun facts about React</h1>
+            <ul>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Facebook</li>
+                <li>Powers thousands of enterprise apps, including mobile apps</li>
+            </ul>
+        </div>
+    )
+}
+
+ReactDOM.render(<TemporaryName />, document.getElementById("root"))
+
+//Challenge: 
+
+//Part 1: Create a page of your own using a custom Page component
+
+//It should return an ordered list with the reasons why you're
+//excited to be learning React :)
+
+//Render your list to the page
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+function Custompage () {
+    return (
+        <div>
+            <h1>Blending love into my work since you are everything to me</h1>
+            <ol>
+                <li>Reasons how much I adore my NUI</li>
+                <li>Reasons how much I want to be with my NUI</li>
+                <li>Reasons how much I love my NUI</li>
+            </ol>
+            </div>
+    )
+}
+
+ReactDOM.render(<Custompage />, document.getElementById("root"))
 
 */
