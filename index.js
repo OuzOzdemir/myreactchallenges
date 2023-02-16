@@ -1,4 +1,4 @@
-/* first challenge starts
+/*
 
 function Navbar() {
     return (
@@ -62,10 +62,12 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
-first challenge ends*/
+*/
 
 
-/*second challenge starts
+
+
+/*
 
 //Imperative way of writing which will take many lines of code
 // ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
@@ -85,10 +87,12 @@ document.getElementById("root").append(h1)
 //Declerative and easy way
 ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
 
-second challenge ends*/
+*/
 
 
-/*third challenge starts
+
+
+/*
 
 // const h1 = document.createElement("h1")
 // h1.textContent = "Hello world"
@@ -113,10 +117,12 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
-third challenge ends*/
+*/
 
 
-/*fourth challenge starts
+
+
+/*
 
 // const page = (
 //     <div>
@@ -147,5 +153,107 @@ const navbar = (
 
 ReactDOM.render(navbar, document.getElementById("root"))
 
-fourth challenge ends */
+*/
 
+
+
+
+/*
+
+//THIS IS HOW WE RENDER WITH REACT 18!!!!!!
+import React from "react"
+import ReactDOM from "react-dom/client"
+
+const navbar = (
+    <nav>
+        <h1>Bob's Bistro</h1>
+        <ul>
+            <li>Menu</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(navbar)
+
+// ReactDOM.render(navbar, document.getElementById("root"))
+// ReactDOM.createRoot(document.getElementById("root")).render(navbar)
+
+*/
+
+
+
+/*
+import React from "react"
+import ReactDOM from "react-dom"
+//ReactDOM won't work without importing ReactDOM from "react-dom"
+
+/**
+Challenge: fix our code!
+
+Don't forget, you're not using CDNs anymore, so there's no
+global "ReactDOM" variable to use anymore.
+
+
+const page = (
+    <div>
+        <h1>My awesome website in React</h1>
+        <h3>Reasons I love React</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's a hireable skill</li>
+            <li>It's actively maintained by skilled people</li>
+        </ol>
+    </div>
+)
+
+ReactDOM.render(page, document.getElementById("root"))
+*/
+
+
+
+/*
+
+//Challenge: Starting from scratch, build and render the 
+//HTML for our section project. Check the Google slide for 
+//what you're trying to build.
+
+//We'll be adding styling to it later.
+
+//Hints:
+// The React logo is a file in the project tree, so you can
+//  access it by using `src="./react-logo.png" in your image
+//  element
+// You can also set the `width` attribute of the image element
+//  just like in HTML. In the slide, I have it set to 40px
+ 
+
+  import React from "react"
+  import ReactDOM from "react-dom"
+  
+  const mypage = (
+      <div>
+          <img src="./react-logo.png" width="40px" height="40px"/>
+          <h1>Fun facts about React</h1>
+          <ul>
+              <li>Was first released in 2013</li>
+              <li>Was originally created by Jordan Walke</li>
+              <li>Has well over 100k stars on Github</li>
+              <li>Is maintained by Facebook</li>
+              <li>Powers thousands of enterprise apps, including mobile apps</li>
+          </ul>
+      </div>
+  )
+  
+  ReactDOM.render(mypage, document.getElementById("root"))
+  
+ */
+
+/*
+
+
+
+*/
