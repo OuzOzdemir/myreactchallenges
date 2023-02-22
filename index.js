@@ -391,3 +391,90 @@ ReactDOM.render(<Custompage />, document.getElementById("root"))
 
 
 
+
+/*
+
+Quiz!
+
+1. What is a React component?
+- React components are like small pieces of a big puzzle. They wrap JSX into functions and we can render them whenever we need them.
+--A function that returns React elements. (UI)
+
+2. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+- The component has JSX inside it which is not nested in parent element. It could be nested in a div or "<></>"
+--It was supposed to be a Pascal case or we can call it camel case such as MyComponent
+
+3. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+- It is not nested in a parent element like div or "<></>" and the element that we wanted to be rendered could be written as <Header />
+-- <Header />
+
+*/
+
+
+
+
+/*
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+//Challenge: 
+
+//- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+//- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
+
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's a popular library, so I'll be 
+                able to fit in with the cool kids!</li>
+                <li>I'm more likely to get a job as a developer
+                if I know React</li>
+            </ol>
+            <footer>
+                <small>© 2021 Ziroll development. All rights reserved.</small>
+            </footer>
+        </div>
+    )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
+
+*/
+
+
+
