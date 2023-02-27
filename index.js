@@ -1,5 +1,3 @@
-/*
-
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -44,7 +42,6 @@ function Navbar() {
 // Challenge: Create your own custom React component!
 // Call it "MainContent", and have it return a simple
 // h1 element that says "I'm learning React!"
-
 // Afterward, render it below the Navbar (which
 // you can do inside the ReactDOM.render call below)
 
@@ -62,16 +59,11 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
-*/
 
 
-
-
-/*
 
 //Imperative way of writing which will take many lines of code
 // ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
-
 //Challenge - recreate the above line of code in vanilla JS by creating and
 //appending an h1 to our div#root (without using innerHTML).
 //- Create a new h1 element
@@ -87,18 +79,13 @@ document.getElementById("root").append(h1)
 //Declerative and easy way
 ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
 
-*/
 
 
-
-
-/*
 
 // const h1 = document.createElement("h1")
 // h1.textContent = "Hello world"
 // h1.className = "header"
 // console.log(h1)
-
 // JSX
 ReactDOM.render(
     <h1 className="header">This is JSX</h1>, 
@@ -117,12 +104,8 @@ ReactDOM.render(
     document.getElementById("root")
 )
 
-*/
 
 
-
-
-/*
 
 // const page = (
 //     <div>
@@ -130,9 +113,7 @@ ReactDOM.render(
 //         <p>This is a paragraph</p>
 //     </div>
 // )
-
 //Challenge: 
-
 //Create a navbar in JSX:
 //    - Use the semantic `nav` element as the parent wrapper
 //    - Have an h1 element with the brand name of your "website"
@@ -153,12 +134,8 @@ const navbar = (
 
 ReactDOM.render(navbar, document.getElementById("root"))
 
-*/
 
 
-
-
-/*
 
 //THIS IS HOW WE RENDER WITH REACT 18!!!!!!
 import React from "react"
@@ -181,21 +158,17 @@ root.render(navbar)
 // ReactDOM.render(navbar, document.getElementById("root"))
 // ReactDOM.createRoot(document.getElementById("root")).render(navbar)
 
-*/
 
 
 
-/*
+
+//ReactDOM won't work without importing ReactDOM from "react-dom"
+//Challenge: fix our code!
+//Don't forget, you're not using CDNs anymore, so there's no
+//global "ReactDOM" variable to use anymore.
+
 import React from "react"
 import ReactDOM from "react-dom"
-//ReactDOM won't work without importing ReactDOM from "react-dom"
-
-/**
-Challenge: fix our code!
-
-Don't forget, you're not using CDNs anymore, so there's no
-global "ReactDOM" variable to use anymore.
-
 
 const page = (
     <div>
@@ -211,18 +184,14 @@ const page = (
 )
 
 ReactDOM.render(page, document.getElementById("root"))
-*/
 
 
 
-/*
 
 //Challenge: Starting from scratch, build and render the 
 //HTML for our section project. Check the Google slide for 
 //what you're trying to build.
-
 //We'll be adding styling to it later.
-
 //Hints:
 // The React logo is a file in the project tree, so you can
 //  access it by using `src="./react-logo.png" in your image
@@ -230,7 +199,6 @@ ReactDOM.render(page, document.getElementById("root"))
 // You can also set the `width` attribute of the image element
 //  just like in HTML. In the slide, I have it set to 40px
  
-
   import React from "react"
   import ReactDOM from "react-dom"
   
@@ -249,14 +217,12 @@ ReactDOM.render(page, document.getElementById("root"))
   )
   
   ReactDOM.render(mypage, document.getElementById("root"))
-  
- */
 
 
 
 
 /*
-quizz
+Quizz
 1. Why do we need to `import React from "react"` in our files?
 *React will not be rendered on the page without importing it.
 -React is what defines JSX. It won't work without importing it.
@@ -295,7 +261,6 @@ larger/greater than the individual pieces.
 
 
 
-/*
 import React from "react"
 import ReactDOM from "react-dom"
 
@@ -344,12 +309,9 @@ function Custompage () {
 
 ReactDOM.render(<Custompage />, document.getElementById("root"))
 
-*/
 
 
 
-
-/*
 //Challenge: 
 //Part 2: 
 //- Add a `header` element with a nested `nav` element. Inside the `nav`,
@@ -359,7 +321,7 @@ ReactDOM.render(<Custompage />, document.getElementById("root"))
 //- Add an `h1` with some text describing the page. (E.g. "Reasons
 // I'm excited to learn React"). Place it above the ordered list.
 //- Add a `footer` after the list that says: 
-//    "© 20xx <last name here> development. All rights reserved."
+//   "© 20xx <last name here> development. All rights reserved."
 
     import React from "react"
     import ReactDOM from "react-dom"
@@ -387,13 +349,11 @@ ReactDOM.render(<Custompage />, document.getElementById("root"))
     }
     
     ReactDOM.render(<Page />, document.getElementById("root"))
-    */
 
 
 
 
 /*
-
 Quiz!
 
 1. What is a React component?
@@ -427,19 +387,16 @@ ReactDOM.render(Header(), document.getElementById("root"))
 ```
 - It is not nested in a parent element like div or "<></>" and the element that we wanted to be rendered could be written as <Header />
 -- <Header />
-
 */
 
 
 
 
-/*
-
 //Challenge: 
 //- Move the `footer` into its own component called "Footer" 
-  and render that component inside the Page component.
+//and render that component inside the Page component.
 //- Move the `h1` and `ol` together into another component
-  called "MainContent" and render inside Page as well.
+//called "MainContent" and render inside Page as well.
 
 import React from "react"
 import ReactDOM from "react-dom"
@@ -487,14 +444,10 @@ function Page() {
 
 ReactDOM.render(<Page />, document.getElementById("root"))
 
-*/
 
 
 
-/*
-
-Challenge: 
-
+//Challenge:
 //- Add an `ul` inside the Header's `nav` and create
 //the following `li`s: "Pricing", "About", & "Contact"
 //- Using flexbox, line up the nav items horizontally, and
@@ -575,15 +528,139 @@ ReactDOM.render(<Page />, document.getElementById("root"))
     width: 60px;
 }
 
-*/
+
+
+
+//Another version with gradient background
+import React from "react"
+import ReactDOM from "react-dom"
+
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
+}
+
+function Footer() {
+    return (
+        <footer className="footer">
+            <small>© 2021 Ziroll development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
+    return (
+        <div className="main-content">
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's a popular library, so I'll be 
+                able to fit in with the cool kids!</li>
+                <li>I'm more likely to get a job as a developer
+                if I know React</li>
+            </ol>
+        </div>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
+
+//CSS CODE
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #111111 16%,
+    #1c1c1c 33%,
+    #262626 50%,
+    #313131 66%,
+    #3c3c3c 83%,
+    #474747 100%
+  );
+    border: 2px solid #ecf0f1;
+    height: 60px;
+    color: white;
+}
+
+.nav-logo {
+    width: 60px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items > li {
+    padding: 10px;
+}
+
+.main-content{
+    padding-left: 50px;
+    background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #111111 16%,
+    #1c1c1c 33%,
+    #262626 50%,
+    #313131 66%,
+    #3c3c3c 83%,
+    #474747 100%
+  );
+    border-top: 1px solid #616a6b;
+    border-right: 2px solid #ecf0f1;
+    border-left: 2px solid #ecf0f1;
+    border-bottom: 1px solid #616a6b;
+    color: white;}
+
+.footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: flex;
+    background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #111111 16%,
+    #1c1c1c 33%,
+    #262626 50%,
+    #313131 66%,
+    #3c3c3c 83%,
+    #474747 100%
+  );
+    border: 2px solid #ecf0f1;
+    color: white;
+}
 
 
 
 
-/*
 
 
-*/
+
+
 
 
 
